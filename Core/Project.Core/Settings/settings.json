@@ -1,0 +1,19 @@
+﻿{
+  "ThirdPartyConnectionModels": {
+    "Api1": {
+      "Url": "",
+      "ApiKey": "",
+      "Apisecret": ""
+    },
+    "Api2": {
+      "Url": "",
+      "ApiKey": "",
+      "Apisecret": ""
+    },
+    "Api3": {
+      "Url": "",
+      "ApiKey": "",
+      "Apisecret": ""
+    }
+  }
+}
