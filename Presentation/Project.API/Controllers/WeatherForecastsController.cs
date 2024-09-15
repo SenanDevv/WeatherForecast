@@ -17,7 +17,7 @@ namespace Project.API.Controllers
         [HttpGet]
         public async Task<IActionResult> Index([FromQuery] DateTime? date, [FromQuery] string? city, [FromQuery] string? country)
         {
-            return Ok(await _weatherForecastService.GetForecasts(date, city, country));
+            return Ok(await _weatherForecastService.GetForecastsAsync(date, city, country));
         }
     }
 }

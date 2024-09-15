@@ -4,16 +4,22 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>4f262e80-5fb2-40a2-9c37-b5874c902c8c</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastructure\Project.Infrastructure\Project.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Project.Geocoding\Project.Geocoding.csproj" />
     <ProjectReference Include="..\..\Infrastructure\Project.Service\Project.Service.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Project.WeatherbitApi\Project.WeatherbitApi.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Project.WorldWeatherOnline\Project.WorldWeatherOnlineApi.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,6 +4,6 @@ namespace Project.Service.Services.Abstraction
 {
     public interface IWeatherForecastService
     {
-        Task<Result> GetForecasts(DateTime? date, string? city, string? country);
+        Task<Result> GetForecastsAsync(DateTime? date, string? city, string? country);
     }
 }

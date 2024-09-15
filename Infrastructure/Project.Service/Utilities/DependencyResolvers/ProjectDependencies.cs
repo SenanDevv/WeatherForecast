@@ -10,10 +10,11 @@ namespace Project.Service.Utilities.DependencyResolvers
     {
         public static void AddProjectDependencies(this IServiceCollection services)
         {
-            // Services
-            services.AddTransient<IWeatherForecastService, WeatherForecastService>();
-            services.AddTransient<IValidator<ForecastParameters>, ForecastParametersValidator>();
+            services.AddMemoryCache();
 
+            // Services
+            services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+            services.AddScoped<IValidator<ForecastParameters>, ForecastParametersValidator>();
         }
     }
 }
