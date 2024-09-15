@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "ebf8dd7f-4037-4e78-9419-09c738f39722",
+		"name": "Forecasts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19454460"
+	},
+	"item": [
+		{
+			"name": "GetForecasts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://weatherforecastapp-g6crh2eqg6b3fca5.westeurope-01.azurewebsites.net/api/WeatherForecasts?date=2024-01-13&country=England&city=London",
+					"protocol": "https",
+					"host": [
+						"weatherforecastapp-g6crh2eqg6b3fca5",
+						"westeurope-01",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"WeatherForecasts"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2024-01-13"
+						},
+						{
+							"key": "country",
+							"value": "England"
+						},
+						{
+							"key": "city",
+							"value": "London"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
